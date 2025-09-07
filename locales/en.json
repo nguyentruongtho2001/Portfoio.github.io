@@ -1,0 +1,56 @@
+{
+  "meta": { "title": "Nguyen Truong Tho — Portfolio" },
+
+  "header": {
+    "role1": "Backend Developer, Automation Tester",
+    "role2": "Web Developer",
+    "summary": "Aspiring to the position of <span>Junior Developer</span> in web development.",
+    "contact": {
+      "title": "Contact Information",
+      "emailLabel": "Email me at:",
+      "phoneLabel": "Call me at:"
+    }
+  },
+
+  "about": {
+    "title": "About Me",
+    "description": "Hello! I'm a backend developer with 2 years of experience: 1 year in backend systems and 1 year in test automation. I have a solid foundation in Java, APIs, and databases, and a strong understanding of software quality assurance. My goal is to focus on Backend Development to build stable and efficient systems.",
+    "cta": {
+      "cv": "Download CV",
+      "projects": "View Projects"
+    }
+  },
+
+  "skills": {
+    "title": "Skills & Expertise",
+    "description": "As a junior web developer, I have a solid foundation in front-end frameworks like React and the Next.js library, and experience with back-end technologies such as Node.js and Express.",
+    "tools": {
+      "title": "Tools & Technologies",
+      "desc": "Proficient with modern web development tools, experienced in building interactive, user-friendly apps, and passionate about clean, maintainable code."
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "desc": "Strong communication, collaboration, and problem-solving; proactive and eager to learn; adaptable in dynamic team environments.",
+      "s1": "Professional communication",
+      "s2": "Effective time management",
+      "s3": "Reliability",
+      "s4": "Curiosity & growth mindset"
+    }
+  },
+
+  "projects": {
+    "title": "Hands-on Projects",
+    "description": "A collection of school internship projects that helped me strengthen technical skills and solve problems creatively.",
+    "card": {
+      "tag": "project {{n}}",
+      "1": "Todo List",
+      "2": "Tech news website",
+      "3": "Todo List",
+      "4": "Todo List",
+      "5": "Corporate website design",
+      "6": "Web design"
+    }
+  },
+
+  "footer": { "copy": "© Nguyen Truong Tho Portfolio" }
+}

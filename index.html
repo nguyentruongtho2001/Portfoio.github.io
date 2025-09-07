@@ -2,42 +2,45 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Nguyễn Trường Thọ Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Nguyễn Trường Thọ Portfolio</title>
 
-    <link
-      rel="stylesheet"
-      href="css/main.css"
-    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-    <link
-      rel="stylesheet"
-      href="css/responsive.css"
-    />
+    <link rel="icon" href="./assets/rocket-icon.ico" />
 
-    <link
-      rel="icon"
-      href="./assets/rocket-icon.ico"
-    />
-
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* bạn có thể style nhẹ cho switcher */
+            .lang-toggle {
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 9999;
+            }
+            #langToggle {
+              padding: 6px 14px;
+              border-radius: 6px;
+              border: none;
+              cursor: pointer;
+              font-weight: bold;
+              background: #333;
+              color: #fff;
+            }
+    </style>
   </head>
   <body>
+      <!-- Toggle button -->
+      <div class="lang-toggle">
+        <button id="langToggle">EN</button>
+      </div>
+
     <!--------------- 
       Header
     ----------------->
@@ -51,25 +54,22 @@
           <div class="header__content--left">
             <h2 class="header__title">Nguyễn Trường Thọ</h2>
             <div class="header__badge_container">
-              <div class="badge">Backend Developer, Automation Tester</div>
-              <div class="badge">Web Developer</div>
+              <div class="badge" data-i18n="header.role1">Backend Developer, Automation Tester</div>
+              <div class="badge" data-i18n="header.role2">Web Developer</div>
             </div>
-            <p>
-              Mong muốn ứng tuyển vị trí <span>Junior Developer</span> trong lĩnh vực
-              phát triển web.
-            </p>
+            <p data-i18n="header.summary" data-i18n-html></p>
           </div>
         </div>
 
         <!-- right column -->
         <div class="header__column--right">
-          <h2 class="header__title">Thông Tin Liên Hệ</h2>
+          <h2 class="header__title" data-i18n="header.contact.title">Thông Tin Liên Hệ</h2>
           <p>
-            Gửi email cho mình tại:
+            <span data-i18n="header.contact.emailLabel">Gửi email cho mình tại:</span>
             <span>nguyentruongtho.dev@gmail.com</span>
           </p>
           <p>
-            Gọi cho mình tại:
+            <span data-i18n="header.contact.phoneLabel">Gọi cho mình tại:</span>
             <span>0395431619</span>
           </p>
         </div>
@@ -81,22 +81,15 @@
     ----------------------------------->
     <section class="aboutMe__section">
       <!-- Hình động 2 bên -->
-      <img
-        src="./assets/rocket-icon.svg"
-        alt="rocket icon"
-      />
-
-      <img
-        src="./assets/laptop-icon.svg"
-        alt="laptop icon"
-      />
+      <img src="./assets/rocket-icon.svg" alt="rocket icon" />
+      <img src="./assets/laptop-icon.svg" alt="laptop icon" />
 
       <!-- Nội dung chính -->
       <div class="aboutMe__container">
         <div class="aboutMe__content_container">
-          <h1 class="section__title">Giới Thiệu Bản Thân</h1>
+          <h1 class="section__title" data-i18n="about.title">Giới Thiệu Bản Thân</h1>
 
-          <p class="section__description">
+          <p class="section__description" data-i18n="about.description">
             Xin chào! Mình một lập trình viên backend với 2 năm kinh nghiệm, trong đó 1 năm phát triển hệ thống backend và 1 năm kiểm thử tự động.
             Tôi có nền tảng vững chắc về Java, API và cơ sở dữ liệu, đồng thời hiểu rõ quy trình đảm bảo chất lượng phần mềm. 
             Mong muốn của tôi là tập trung chuyên sâu hơn vào Backend Development để xây dựng các hệ thống ổn định và hiệu quả.
@@ -109,14 +102,11 @@
               rel="noopener noreferrer"
               class="primaryButton"
               download
+              data-i18n="about.cta.cv"
               >Tải CV</a
             >
 
-            <a
-              href="#ProjectContainer"
-              class="outlineButton"
-              >Xem Dự Án</a
-            >
+            <a href="#ProjectContainer" class="outlineButton" data-i18n="about.cta.projects">Xem Dự Án</a>
           </div>
         </div>
       </div>
@@ -129,9 +119,9 @@
       <div class="container skills__container">
         <!-- header -->
         <div class="section__header">
-          <h1 class="section__title">Kỹ năng & Chuyên môn</h1>
+          <h1 class="section__title" data-i18n="skills.title">Kỹ năng & Chuyên môn</h1>
 
-          <p class="section__description">
+          <p class="section__description" data-i18n="skills.description">
             Là một nhà phát triển web mới vào nghề, mình có nền tảng vững chắc về các
             framework front-end như React và thư viện NextJS, và có kinh nghiệm làm
             việc với các công nghệ back-end như Node.js và Express.
@@ -147,20 +137,17 @@
           <div class="skills__grid_item">
             <div class="skills__grid_item_header">
               <div>
-                <img
-                  src="./assets/check-icon.svg"
-                  alt="check-icon"
-                />
-                <h2>Công cụ & Công nghệ</h2>
+                <img src="./assets/check-icon.svg" alt="check-icon" />
+                <h2 data-i18n="skills.tools.title">Công cụ & Công nghệ</h2>
               </div>
-              <p>
+              <p data-i18n="skills.tools.desc">
                 Thành thạo nhiều công cụ lập trình web hiện đại, có kinh nghiệm xây
                 dựng các ứng dụng web tương tác, thân thiện với người dùng và đam mê
                 viết mã sạch, dễ bảo trì.
               </p>
             </div>
 
-            <!-- skill logos -->
+             <!-- skill logos -->
             <div>
               <!-- list 1 -->
               <div class="icons-list-wrapper">
@@ -490,13 +477,10 @@
           <div class="skills__grid_item">
             <div class="skills__grid_item_header">
               <div>
-                <img
-                  src="./assets/check-icon.svg"
-                  alt="check icon"
-                />
-                <h2>Kỹ Năng Mềm</h2>
+                <img src="./assets/check-icon.svg" alt="check icon" />
+                <h2 data-i18n="skills.soft.title">Kỹ Năng Mềm</h2>
               </div>
-              <p>
+              <p data-i18n="skills.soft.desc">
                 Kỹ năng giao tiếp, cộng tác, và giải quyết vấn đề xuất sắc, với thái
                 độ chủ động và ham học hỏi, dễ dàng thích nghi trong môi trường làm
                 việc nhóm năng động.
@@ -504,37 +488,16 @@
             </div>
 
             <div class="softSkills__container">
-              <div class="softSkills_badge">
-                <p>Giao tiếp chuyên nghiệp</p>
-              </div>
-
-              <div class="softSkills_badge">
-                <p>Quản lý thời gian hiệu quả</p>
-              </div>
-              <div class="softSkills_badge">
-                <p>Đáng tin cậy</p>
-              </div>
-              <div class="softSkills_badge">
-                <p>Ham học hỏi</p>
-              </div>
+              <div class="softSkills_badge"><p data-i18n="skills.soft.s1">Giao tiếp chuyên nghiệp</p></div>
+              <div class="softSkills_badge"><p data-i18n="skills.soft.s2">Quản lý thời gian hiệu quả</p></div>
+              <div class="softSkills_badge"><p data-i18n="skills.soft.s3">Đáng tin cậy</p></div>
+              <div class="softSkills_badge"><p data-i18n="skills.soft.s4">Ham học hỏi</p></div>
 
               <div class="softSkills__book_icons">
-                <img
-                  src="./assets/closed-book.svg"
-                  alt="closed book icon"
-                />
-                <img
-                  src="./assets/closed-book.svg"
-                  alt="closed book icon"
-                />
-                <img
-                  src="./assets/closed-book.svg"
-                  alt="closed book icon"
-                />
-                <img
-                  src="./assets/closed-book.svg"
-                  alt="closed book icon"
-                />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
               </div>
             </div>
           </div>
@@ -548,15 +511,12 @@
     <!--------------------------------- 
       Projects - Dự Án
     ----------------------------------->
-    <section
-      class="projects__section"
-      id="ProjectContainer"
-    >
+    <section class="projects__section" id="ProjectContainer">
       <div class="container projects_container">
         <!-- header -->
         <div class="section__header">
-          <h1 class="section__title">Đồ Án Thực Chiến</h1>
-          <p class="section__description">
+          <h1 class="section__title" data-i18n="projects.title">Đồ Án Thực Chiến</h1>
+          <p class="section__description" data-i18n="projects.description">
             Bộ sưu tập dự án thực tập tại trường này giúp mình củng cố và hoàn thiện
             những kỹ năng kỹ thuật cũng như khả năng giải quyết vấn đề một cách sáng
             tạo.
@@ -565,122 +525,74 @@
 
         <!-- cards -->
         <div class="projects__cards_container">
-          <a
-            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/sissyMai/mtikcode-simple-portfolio" target="_blank" rel="noopener noreferrer">
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project1.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
+                <img src="./assets/project1.jpg" alt="project1" class="projects__cards_img" />
               </div>
               <div class="projects__cards_titles">
-                <h4>dự án 1</h4>
-                <h3>Todo List</h3>
+                <h4 data-i18n="projects.card.tag" data-i18n-params='{"n":1}'>dự án 1</h4>
+                <h3 data-i18n="projects.card.1">Todo List</h3>
               </div>
             </div>
           </a>
 
-          <a
-            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/sissyMai/mtikcode-simple-portfolio" target="_blank" rel="noopener noreferrer">
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project2.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
+                <img src="./assets/project2.jpg" alt="project1" class="projects__cards_img" />
               </div>
               <div class="projects__cards_titles">
-                <h4>dự án 2</h4>
-                <h3>trang thông tin công nghệ</h3>
+                <h4 data-i18n="projects.card.tag" data-i18n-params='{"n":2}'>dự án 2</h4>
+                <h3 data-i18n="projects.card.2">trang thông tin công nghệ</h3>
               </div>
             </div>
           </a>
 
-          <a
-            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/sissyMai/mtikcode-simple-portfolio" target="_blank" rel="noopener noreferrer">
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project3.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
+                <img src="./assets/project3.jpg" alt="project1" class="projects__cards_img" />
               </div>
               <div class="projects__cards_titles">
-                <h4>dự án 3</h4>
-                <h3>Todo List</h3>
+                <h4 data-i18n="projects.card.tag" data-i18n-params='{"n":3}'>dự án 3</h4>
+                <h3 data-i18n="projects.card.3">Todo List</h3>
               </div>
             </div>
           </a>
 
-          <a
-            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/sissyMai/mtikcode-simple-portfolio" target="_blank" rel="noopener noreferrer">
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project4.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
+                <img src="./assets/project4.jpg" alt="project1" class="projects__cards_img" />
               </div>
               <div class="projects__cards_titles">
-                <h4>dự án 4</h4>
-                <h3>Todo List</h3>
+                <h4 data-i18n="projects.card.tag" data-i18n-params='{"n":4}'>dự án 4</h4>
+                <h3 data-i18n="projects.card.4">Todo List</h3>
               </div>
             </div>
           </a>
 
-          <a
-            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/sissyMai/mtikcode-simple-portfolio" target="_blank" rel="noopener noreferrer">
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project5.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
+                <img src="./assets/project5.jpg" alt="project1" class="projects__cards_img" />
               </div>
               <div class="projects__cards_titles">
-                <h4>dự án 5</h4>
-                <h3>thiết kế trang doanh nghiệp</h3>
+                <h4 data-i18n="projects.card.tag" data-i18n-params='{"n":5}'>dự án 5</h4>
+                <h3 data-i18n="projects.card.5">thiết kế trang doanh nghiệp</h3>
               </div>
             </div>
           </a>
 
-          <a
-            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/sissyMai/mtikcode-simple-portfolio" target="_blank" rel="noopener noreferrer">
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project6.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
+                <img src="./assets/project6.jpg" alt="project1" class="projects__cards_img" />
               </div>
               <div class="projects__cards_titles">
-                <h4>dự án 6</h4>
-                <h3>Thiết kế web</h3>
+                <h4 data-i18n="projects.card.tag" data-i18n-params='{"n":6}'>dự án 6</h4>
+                <h3 data-i18n="projects.card.6">Thiết kế web</h3>
               </div>
             </div>
           </a>
@@ -693,8 +605,11 @@
     ----------------------------------->
     <footer>
       <div class="container">
-        <p>© Nguyễn Trường Thọ Portfolio</p>
+        <p data-i18n="footer.copy">© Nguyễn Trường Thọ Portfolio</p>
       </div>
     </footer>
+
+    <!-- I18N script -->
+    <script src="./js/i18n.js"></script>
   </body>
 </html>

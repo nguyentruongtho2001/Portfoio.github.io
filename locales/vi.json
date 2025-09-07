@@ -1,0 +1,56 @@
+{
+  "meta": { "title": "Nguyễn Trường Thọ Portfolio" },
+
+  "header": {
+    "role1": "Backend Developer, Automation Tester",
+    "role2": "Web Developer",
+    "summary": "Mong muốn ứng tuyển vị trí <span>Junior Developer</span> trong lĩnh vực phát triển web.",
+    "contact": {
+      "title": "Thông Tin Liên Hệ",
+      "emailLabel": "Gửi email cho mình tại:",
+      "phoneLabel": "Gọi cho mình tại:"
+    }
+  },
+
+  "about": {
+    "title": "Giới Thiệu Bản Thân",
+    "description": "Xin chào! Mình một lập trình viên backend với 2 năm kinh nghiệm, trong đó 1 năm phát triển hệ thống backend và 1 năm kiểm thử tự động. Tôi có nền tảng vững chắc về Java, API và cơ sở dữ liệu, đồng thời hiểu rõ quy trình đảm bảo chất lượng phần mềm. Mong muốn của tôi là tập trung chuyên sâu hơn vào Backend Development để xây dựng các hệ thống ổn định và hiệu quả.",
+    "cta": {
+      "cv": "Tải CV",
+      "projects": "Xem Dự Án"
+    }
+  },
+
+  "skills": {
+    "title": "Kỹ năng & Chuyên môn",
+    "description": "Là một nhà phát triển web mới vào nghề, mình có nền tảng vững chắc về các framework front-end như React và thư viện NextJS, và có kinh nghiệm làm việc với các công nghệ back-end như Node.js và Express.",
+    "tools": {
+      "title": "Công cụ & Công nghệ",
+      "desc": "Thành thạo nhiều công cụ lập trình web hiện đại, có kinh nghiệm xây dựng các ứng dụng web tương tác, thân thiện với người dùng và đam mê viết mã sạch, dễ bảo trì."
+    },
+    "soft": {
+      "title": "Kỹ Năng Mềm",
+      "desc": "Kỹ năng giao tiếp, cộng tác, và giải quyết vấn đề xuất sắc, với thái độ chủ động và ham học hỏi, dễ dàng thích nghi trong môi trường làm việc nhóm năng động.",
+      "s1": "Giao tiếp chuyên nghiệp",
+      "s2": "Quản lý thời gian hiệu quả",
+      "s3": "Đáng tin cậy",
+      "s4": "Ham học hỏi"
+    }
+  },
+
+  "projects": {
+    "title": "Đồ Án Thực Chiến",
+    "description": "Bộ sưu tập dự án thực tập tại trường này giúp mình củng cố và hoàn thiện những kỹ năng kỹ thuật cũng như khả năng giải quyết vấn đề một cách sáng tạo.",
+    "card": {
+      "tag": "dự án {{n}}",
+      "1": "Todo List",
+      "2": "trang thông tin công nghệ",
+      "3": "Todo List",
+      "4": "Todo List",
+      "5": "thiết kế trang doanh nghiệp",
+      "6": "Thiết kế web"
+    }
+  },
+
+  "footer": { "copy": "© Nguyễn Trường Thọ Portfolio" }
+}
